@@ -1,0 +1,48 @@
+<ion-content padding>
+  <ion-card >
+      <ion-card-content ></ion-card-content>
+      <h1 align='center'>
+          Senior Movement
+      </h1>
+    <ion-card-header>
+        Last Location Recieved:    
+    </ion-card-header>
+  
+    <ion-card-content >
+      {{this.provider.lastMoveLocation}}
+    </ion-card-content>
+    
+    <ion-card-header>
+        Time Since Senior Located:    
+    </ion-card-header>
+  
+    <ion-card-content >
+      Minutes: {{this.provider.mins}}\n
+      Seconds: {{this.provider.secs}}
+    </ion-card-content>
+
+        <ion-card-header>
+          Room Activity:
+        </ion-card-header>
+        <ion-card-content align='center'>
+            <!-- <img src = "../../assets/325houseMap.png"> -->
+            <canvas #roomBarCanvas></canvas>
+        </ion-card-content>
+
+    <ion-card-header>
+        Connection Status:    
+    </ion-card-header>
+  
+    <ion-card-content >
+      {{this.mqttStatus}}
+    </ion-card-content>
+    <ion-row justify-content-center align-items-center>
+      <button outline ion-button round color='dark' (click)= "connect()">Connect</button>
+      <button outline ion-button round color='dark' (click)= "disconnect()">Disconnect</button>
+    </ion-row>
+    <ion-card-content >
+      </ion-card-content>
+  </ion-card>
+
+    
+</ion-content>

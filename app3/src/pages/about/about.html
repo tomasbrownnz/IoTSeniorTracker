@@ -1,0 +1,57 @@
+<ion-content align='center' padding>
+
+    <ion-refresher (ionRefresh)="doRefresh($event)">
+        <ion-refresher-content
+          pullingIcon="arrow-dropdown"
+          pullingText="Pull to refresh"
+          refreshingSpinner="circles"
+          refreshingText="Refreshing...">
+        </ion-refresher-content>
+      </ion-refresher>
+
+  <ion-card>
+    <ion-card-header>
+      Dining Room Charge
+    </ion-card-header>
+    <ion-card-content>
+      <canvas #diningDoughnutCanvas></canvas>
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card>
+    <ion-card-header>
+      Bedroom Charge
+    </ion-card-header>
+    <ion-card-content>
+      <canvas #bedroomDoughnutCanvas></canvas>
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card>
+    <ion-card-header>
+      Kitchen Charge
+    </ion-card-header>
+    <ion-card-content>
+      <canvas #kitchenDoughnutCanvas></canvas>
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card>
+    <ion-card-header>
+      Lounge Charge
+    </ion-card-header>
+    <ion-card-content>
+      <canvas #loungeDoughnutCanvas></canvas>
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card>
+    <ion-card-header>
+      Toilet Charge
+    </ion-card-header>
+    <ion-card-content>
+      <canvas #toiletDoughnutCanvas></canvas>
+    </ion-card-content>
+  </ion-card>
+
+</ion-content>
